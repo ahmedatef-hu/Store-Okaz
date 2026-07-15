@@ -821,6 +821,33 @@ ul {
     transform: scale(1.1);
 }
 
+.product-img-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    color: var(--primary);
+    opacity: 0.4;
+    transition: all var(--transition-base);
+}
+
+.product-img-placeholder svg {
+    filter: drop-shadow(0 4px 8px rgba(14, 57, 48, 0.1));
+}
+
+.img-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--primary);
+    text-align: center;
+}
+
+.product-card:hover .product-img-placeholder {
+    opacity: 0.6;
+    transform: scale(1.05);
+}
+
 .product-placeholder {
     color: var(--primary);
     opacity: 0.3;
