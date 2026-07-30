@@ -1,0 +1,31 @@
+بعد ما تعمل Repository على GitHub، استخدم الأوامر دي:
+
+# استبدل YOUR_USERNAME باسم المستخدم بتاعك على GitHub
+git remote add origin https://github.com/YOUR_USERNAME/okaz-store-react.git
+
+# اختار اسم الـ branch الرئيسي (main أو master)
+git branch -M main
+
+# ارفع الكود على GitHub
+git push -u origin main
+
+---
+
+أو لو عندك SSH Key:
+git remote add origin git@github.com:YOUR_USERNAME/okaz-store-react.git
+git branch -M main
+git push -u origin main
+
+---
+
+✅ بعد الـ push، الموقع هيبقى على:
+https://github.com/YOUR_USERNAME/okaz-store-react
+
+🚀 ولو عايز تنشره على Vercel أو Netlify:
+- Vercel: vercel.com (ربط مع GitHub و deploy)
+- Netlify: netlify.com (نفس الموضوع)
+
+📝 ملحوظة:
+- متنساش تحدث YOUR_USERNAME باسمك على GitHub
+- الكود جاهز 100% للرفع
+- كل الملفات متضافة بالفعل
