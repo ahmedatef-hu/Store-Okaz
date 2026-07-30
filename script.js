@@ -769,17 +769,13 @@ pulseStyle.textContent = `
 document.head.appendChild(pulseStyle);
 
 // ====================================================
-// Logo Animation on Scroll
+// Logo Animation on Scroll - DISABLED
 // ====================================================
+// Logo stays stable without rotation
 const navLogo = document.querySelector('.nav-logo img');
-let logoRotation = 0;
-
-window.addEventListener('scroll', () => {
-    if (window.pageYOffset > 100) {
-        logoRotation += 1;
-        navLogo.style.transform = `rotate(${logoRotation}deg)`;
-    }
-});
+if (navLogo) {
+    navLogo.style.transform = 'rotate(0deg)';
+}
 
 // ====================================================
 // Dynamic Year in Footer
